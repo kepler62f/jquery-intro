@@ -1,11 +1,9 @@
-//https://api.themoviedb.org/3/search/movie?api_key={api_key}&query=Jack+Reacher
-//kepler62f API Key: b06bcb01135eded6d2a7c04e224f31ad
-
-
 $(document).ready(function() {
     // run ajax now
     // 2 methods = GET and POST
-    var discover_movie_url = 'https://api.themoviedb.org/3/search/movie?api_key=b06bcb01135eded6d2a7c04e224f31ad&query='
+
+    var mykey = config.MY_KEY
+    var discover_movie_url = 'https://api.themoviedb.org/3/search/movie?api_key='+mykey+'&query='
     var image_url = 'https://image.tmdb.org/t/p/w300'
     var $ul = $('ul')
     var $keyword = $('input')
